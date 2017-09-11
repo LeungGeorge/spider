@@ -70,53 +70,62 @@ class CSpider:
         html = requests.get(url)
         return html
 
-    def run(self, constellation):
-        print 'run...'
+    def run(self, url):
+        print 'get_url...'
+        print url;
+        html = self.getHtml(url)
+        content = html.content
+        soup = BeautifulSoup(content, "html.parser")
 
-        for con in constellation:
-            #'白羊座': {'id':25,'lid':405},
-            pageid = constellation[con]['id']
-            lid = constellation[con]['lid']
-            page = 1;
-            if pageid == 36:
-                page = 21;
+        fileName = "constellationTitle.txt"
 
-            while True:
-                url = "http://feed.mix.sina.com.cn/api/roll/get?pageid=" + str(pageid) + "&lid=" + str(lid) + "&num=10&page=" + str(page);
-                print url;
+        # 顶部
+        divs = soup.findAll('div', {"class": "head_2"})
+        for a in divs:
+            li = a.findAll('li')
+            for aa in li:
+                singleA = aa.findAll('a');
+                for sa in singleA:
+                    self.saveConstellationArticleTitle(fileName, sa['title'])
 
-                html = self.getHtml(url)
-                content = html.content
+        divs = soup.find('div', {"class": "wrapper xz_box"})
 
-                pjs = json.loads(content);
+        for child in divs:
+            try:
+                # 获取星座名，链接
+                h4 = child.find('h4')
+                fileTitle = ''
+                h4Text = ''
+                liText = ''
+                if h4 is not None:
+                    h4Href = h4.a['href']
+                    h4Text = h4.a.get_text()
 
-                rowCount = 0
+                # 获取星座问题
+                lis = child.findAll('li')
+                for li in lis:
+                    liHref = li.a['href']
+                    liText = li.a.get_text()
 
-                for row in pjs['result']['data']:
-                    rowCount = rowCount + 1
-                    oid = row['oid']
-                    title = row['title']
-                    intro = row['intro']
-                    wapsummary = row['wapsummary']
-
-                    url = row['url']
-
-                    articleContent = self.getArticle(url)
+                    articleContent = self.getArticle(liHref)
 
                     constellationContent = {
-                        "constellation": con,
-                        "constellationHref": '',
-                        "constellationArticleTitle": title,
+                        "constellation": h4Text,
+                        "constellationHref": h4Href,
+                        "constellationArticleTitle": liText,
                         "constellationArticleContent": articleContent,
-                        "constellationArticleHref": url,
+                        "constellationArticleHref": liHref,
                     }
 
-                    fileTitle = con + str('------') + str(oid) + str('------') + title
-                    self.saveConstellationArticle(fileTitle, constellationContent)
+                    self.saveConstellationArticleTitle(fileName, liText)
+                    #fileTitle = h4Text + str('------') + liText
+                    #self.saveConstellationArticle(fileTitle, constellationContent)
 
-                page = page + 1
-                if rowCount == 0:
-                    break;
+            except Exception, e:
+                print e
+                print 'execpt...'
+            finally:
+                pass
 
     def getArticle(self, url):
         print 'get article...'
@@ -125,9 +134,20 @@ class CSpider:
         html = self.getHtml(url)
         content = html.content
         soup = BeautifulSoup(content, "html.parser")
-        artibody = soup.find('div', {"id": "artibody"})
+        show_cnt = soup.find('div', {"class": "show_cnt"})
+        return str(show_cnt)
 
-        return str(artibody)
+    def saveConstellationArticleTitle(self, constellationTitle, content):
+        self.makeDir(self.baseDir)
+
+        fileName = self.baseDir + constellationTitle
+        self.writeLog("save file :" + str(fileName))
+
+        fileHandle = open(fileName, 'a')
+
+        print content
+        fileHandle.write(content + "\n")
+        fileHandle.close()
 
     def saveConstellationArticle(self, fileTitle, content):
         self.makeDir(self.baseDir)
@@ -146,50 +166,16 @@ class CSpider:
         }
 
         content = json.dumps(arrPV, ensure_ascii=False)
+        print content
         fileHandle.write(content + "\n")
         fileHandle.close()
 
 
 print 'begin..'
 
-url = "http://feed.mix.sina.com.cn/api/roll/get?pageid=25&lid=405&num=10&page=1";
-
-constellation = {
-    '白羊座': {'id':25,'lid':405},
-    '金牛座': {'id':26,'lid':413},
-    '双子座': {'id':27,'lid':418},
-    '巨蟹座': {'id':28,'lid':422},
-    '狮子座': {'id':29,'lid':427},
-    '处女座': {'id':30,'lid':432},
-    '天秤座': {'id':31,'lid':437},
-    '天蝎座': {'id':32,'lid':442},
-    '射手座': {'id':33,'lid':447},
-    '摩羯座': {'id':34,'lid':453},
-    '水瓶座': {'id':35,'lid':458},
-    '双鱼座': {'id':36,'lid':463},
-}
-
-constellationa = {
-    #'白羊座': {'id':25,'lid':405},
-    #'金牛座': {'id':26,'lid':413},
-    #'双子座': {'id':27,'lid':418},
-    #'巨蟹座': {'id':28,'lid':422},
-    #'狮子座': {'id':29,'lid':427},
-    #'处女座': {'id':30,'lid':432},
-    ####'天秤座': {'id':31,'lid':437},
-    #'天蝎座': {'id':32,'lid':442},
-    #'射手座': {'id':33,'lid':447},
-    #'摩羯座': {'id':34,'lid':453},
-    #'水瓶座': {'id':35,'lid':458},
-    '双鱼座': {'id':36,'lid':463},
-}
+url = "http://www.meiguoshenpo.com/xingzuo/";
 
 obj = CSpider();
+obj.run(url);
 
-obj.run(constellationa);
-
-#obj.run(constellation);
-
-#url = "http://astro.sina.com.cn/v/ss/2017-09-07/doc-ifykusey4488153-p2.shtml"
-#obj.getArticle(url)
 print 'end......'

@@ -1,0 +1,1 @@
+ll crawl_data |awk -F "------" '{print $3}' | awk -F "." '{print $1}' > constellationTitle.txt
