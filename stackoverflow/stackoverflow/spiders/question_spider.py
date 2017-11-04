@@ -13,6 +13,7 @@ class QuestionSpiderSpider(scrapy.Spider):
         #with open(filename, 'wb') as fp:
             #fp.write(response.body);
 
+        self.logger.info('hhhhhhhhhhhh', response.url)
         ques = response.xpath('//*[@id="questions"]/div')
         for q in ques:
             item = StackoverflowItem()
@@ -28,17 +29,11 @@ class QuestionSpiderSpider(scrapy.Spider):
             pageTips = p.xpath('span/text()').extract()
             pageTipsStrip = pageTips[0].strip()
             print pageTipsStrip
-            print pageTipsStrip
-            print pageTipsStrip
-            print pageTipsStrip
                                     
             if 'next' == pageTipsStrip:
                 nextPageUrl = p.xpath('@href').extract()[0];
                 nextPageUrlFull = response.urljoin(nextPageUrl)
                 print nextPageUrlFull
-                print nextPageUrlFull
-                print nextPageUrlFull
-                print nextPageUrlFull
-                print nextPageUrlFull
-                yield scrapy.Request(nextPageUrlFull, callback=self.parse)
+                #recurse crawl all page
+                #yield scrapy.Request(nextPageUrlFull, callback=self.parse)
 
