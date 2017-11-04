@@ -31,6 +31,7 @@ class QuestionSpiderSpider(scrapy.Spider):
             print pageTipsStrip
                                     
             if 'next' == pageTipsStrip:
+                print 'next page ...............'
                 nextPageUrl = p.xpath('@href').extract()[0];
                 nextPageUrlFull = response.urljoin(nextPageUrl)
                 print nextPageUrlFull

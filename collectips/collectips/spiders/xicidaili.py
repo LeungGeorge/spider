@@ -36,5 +36,5 @@ class XicidailiSpider(scrapy.Spider):
                 print 'next page...............'
                 nextPageHref = a.xpath('@href').extract()[0]
                 nextPageHrefFullUrl = response.urljoin(nextPageHref)
-                yield scrapy.Request(nextPageHrefFullUrl, callback=self.parse)
+                #yield scrapy.Request(nextPageHrefFullUrl, callback=self.parse)
 
