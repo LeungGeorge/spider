@@ -1,0 +1,463 @@
+votes,title,link,answers,desc
+0,Algorithm for search peak intervals,https://stackoverflow.com/questions/47109079/algorithm-for-search-peak-intervals,0,"
+            I am looking for some algorithm for search peak intervals.
+
+I have some data like this:
+
+[8.99091 8.87991 8.65791 8.82441 8.71341 9.21291 9.32391 9.04641 8.76891 9.10191 9.7124 9.26841 8.43591 8.26942 ...
+        ,
+            , 
+        ,
+            ,
+        "
+0,how can i change redux react state?,https://stackoverflow.com/questions/47109074/how-can-i-change-redux-react-state,0,"
+            i have threes dom   a ,b ,c  crated by react
+and i change a's state   i just change a's state  but b and c's  state will update state update too  
+
+    let store ;
+    let reducer=function(state, ...
+        ,
+            , 
+        ,
+            ,
+        "
+0,Update statement not working within Cursor & While block,https://stackoverflow.com/questions/47109070/update-statement-not-working-within-cursor-while-block,0,"
+            I am trying to execute an Update statement on a table. This statement is placed within Cursor and While block. I have checked in debugger and the values are coming into the statements and variable, ...
+        ,
+            , , , , 
+        ,
+            ,
+        "
+0,How to do getPaths of polygon from the react-google-map?,https://stackoverflow.com/questions/47109069/how-to-do-getpaths-of-polygon-from-the-react-google-map,0,"
+            Below is my coding:
+
+const SiteGoogleMap = compose(
+withProps({
+googleMapURL: `https://maps.googleapis.com/maps/api/js?key=${GOOGLE_MAP_API_KEY}&v=3.exp&libraries=geometry,drawing,places`,
+...
+        ,
+            , , , , , 
+        ,
+            ,
+        "
+0,RegEx: replace a single ' with double apostrophe ( '') only if the line does not start with #,https://stackoverflow.com/questions/47109068/regex-replace-a-single-with-double-apostrophe-only-if-the-line-does-not,0,"
+            I tried to create a regex replace (using ant) to do some replacement.
+
+The text file which should be worked on contains lines some of which start with # some don't. I want to do the replacement of the ...
+        ,
+            , , 
+        ,
+            ,
+        "
+-1,PHP require_once '…';,https://stackoverflow.com/questions/47109067/php-require-once,0,"
+            Hello there and thank you for your time,
+
+I need to call an other script in PHP but it doesn't work.
+I use the function "" require_once '../autoload.php'; "" and get the error "" Warning: require_once(../...
+        ,
+            , , 
+        ,
+            ,
+        "
+0,Why is the ContactNode causing problems to my codeEntry's later on?,https://stackoverflow.com/questions/47109066/why-is-the-contactnode-causing-problems-to-my-codeentrys-later-on,0,"
+            I keep getting this message from the compiler, this is my code, it is supposed to print a person name, phone number and birthday. And I'm supposed to use the class Contact node in order for the ...
+        ,
+            , 
+        ,
+            ,
+        "
+0,how restart OneFragment when I'm in TowFragment,https://stackoverflow.com/questions/47109065/how-restart-onefragment-when-im-in-towfragment,0,"
+            I need Restart HomeFragment when I'm in CategoryFragment. when I click on Bottom in CategoryFragment, I need Restart HomeFragment. I am a beginner please help me.
+
+TextView tabOne = (TextView) ...
+        ,
+            , , , , , 
+        ,
+            ,
+        "
+0,Getaddrinfo() returning wildcard addresses despite AI_PASSIVE not being set,https://stackoverflow.com/questions/47109062/getaddrinfo-returning-wildcard-addresses-despite-ai-passive-not-being-set,0,"
+            From the man page for getaddrinfo()...
+  If the AI_PASSIVE flag is not set in hints.ai_flags, then the
+         returned socket addresses will be suitable for use with connect(2),
+         sendto(2), ...
+        ,
+            , , 
+        ,
+            ,
+        "
+0,Activity jumps out when open (Android). Any error on code?,https://stackoverflow.com/questions/47109061/activity-jumps-out-when-open-android-any-error-on-code,0,"
+            Activity closed itself when open. What's the error here? I'm still not very familiar with Android. Someone please help me out, thanks.
+((((It asks me to add more details so i just simply type here........
+        ,
+            , , 
+        ,
+            ,
+        "
+0,How to register server on Consul [Java],https://stackoverflow.com/questions/47109060/how-to-register-server-on-consul-java,0,"
+            I don't know how to register a service on Consul server if I got some service like ""locahost:8090/user/login/username""? I'm so appreciate for your help!
+        ,
+            , 
+        ,
+            ,
+        "
+0,Unique Address from google maps api,https://stackoverflow.com/questions/47109053/unique-address-from-google-maps-api,0,"
+            Iam using togeojson for converting kml to togeojson 
+iam getting latitiude and longitude from geometry. 
+
+Iam sending alt & long using google api for getting address this is my jquery code: 
+
+     ...
+        ,
+            , , , , 
+        ,
+            ,
+        "
+0,Call an Action Item (created manually) through Custom Commands (Javascript) based on the number of pages in the PDF document,https://stackoverflow.com/questions/47109052/call-an-action-item-created-manually-through-custom-commands-javascript-base,0,"
+            I am trying to set the Initial view of the PDF documents to Bookmark Panels and Page for PDF's having more than 5 pages. I have created an action using Action wizard in Acrobat DC pro and named it as ...
+        ,
+            , , , 
+        ,
+            ,
+        "
+0,Aggregate data by year interval inside bar plot,https://stackoverflow.com/questions/47109047/aggregate-data-by-year-interval-inside-bar-plot,0,"
+            I want to aggregate data by year interval inside a bar plot. Based on this answer, I wrote the following code:
+
+years <- seq(as.Date('1970/01/01'), Sys.Date(), by=""year"")
+effect <- sample(1:100,...
+        ,
+            , , , 
+        ,
+            ,
+        "
+0,setting a file path for java to load on server app,https://stackoverflow.com/questions/47109046/setting-a-file-path-for-java-to-load-on-server-app,0,"
+            am trying to run a jar app in my server (i didnt create the app )
+the app tries to load a java proprieties file  to connect to myaql data base
+i made a configuration.proprieties  file the ...
+        ,
+            , , , , , 
+        ,
+            ,
+        "
+0,Why REST gets value instead of parameter,https://stackoverflow.com/questions/47109042/why-rest-gets-value-instead-of-parameter,0,"
+            I am working with a website's REST API, which gets an oauth_key and oauth_secret in addition to other parameters. I need to get a user's profile info by sending their user_id to this API. The ...
+        ,
+            , , , 
+        ,
+            ,
+        "
+0,How to execute FreeSwitch command using java code,https://stackoverflow.com/questions/47109039/how-to-execute-freeswitch-command-using-java-code,0,"
+            I am new to freeswitch, I have tried originate command in freeswitch from fs_cli console and it was working properly. now my requirement is to execute the same from a java application. I have tried ...
+        ,
+            , , 
+        ,
+            ,
+        "
+0,cards with 4 columns bootstrap flexbox joomla,https://stackoverflow.com/questions/47109038/cards-with-4-columns-bootstrap-flexbox-joomla,0,"
+            its my first question here. Im trying to make 4 columns in 1 row in cms joomla 3. Link to test site: http://www.chmpolska.pl/1. On main page joomla module with 8 boxes isnt working properly anymore ...
+        ,
+            , , , , , 
+        ,
+            ,
+        "
+0,How return GUID from this method?,https://stackoverflow.com/questions/47109037/how-return-guid-from-this-method,0,"
+            I have the following method. I want to return a new GUID as a successful response to the client:
+
+[ResponseType(typeof(Guid))]
+public async Task<IHttpActionResult> PostOrder(Order order)
+{
+    .....
+        ,
+            , 
+        ,
+            ,
+        "
+0,CP2102 device is not listed in /dev on macOS 10.13,https://stackoverflow.com/questions/47109036/cp2102-device-is-not-listed-in-dev-on-macos-10-13,0,"
+            I have the ESP32 board with Silicon Labs CP2102 controller. When I connect it to my MacBook, I can see this device listed in the System Report > USB as a CP2102 USB to UART Bridge Controller, but it ...
+        ,
+            , , , , , 
+        ,
+            ,
+        "
+0,I want my texts to be interchange up and downs automatically when clicking page url,https://stackoverflow.com/questions/47109035/i-want-my-texts-to-be-interchange-up-and-downs-automatically-when-clicking-page,0,"
+            Am building small job portal website. There is lots of jobs in single page which is in marquee code. Now, i want my all jobs to be exchange positions like up and downs when clicking everytime in URL 
+
+...
+        ,
+            , , , 
+        ,
+            ,
+        "
+0,What is the time complexity of search query in Graph database?,https://stackoverflow.com/questions/47109034/what-is-the-time-complexity-of-search-query-in-graph-database,0,"
+            What is the time complexity of search query in Graph database (especially Neo4j) ?
+
+I'm having relational data with me. I'm confused to use a Relational database or Graph database to store that data. ...
+        ,
+            , , , , , 
+        ,
+            ,
+        "
+0,WordPress Warning Support,https://stackoverflow.com/questions/47109033/wordpress-warning-support,0,"
+            I cannot excess to my website admin panel. It shows the following warning
+
+Warning: Cannot modify header information – headers already sent by (output started at /home/filmymik/public_html/wp-content/...
+        ,
+            , , 
+        ,
+            ,
+        "
+0,calculating windowed probabilities in numpy/scipy,https://stackoverflow.com/questions/47109031/calculating-windowed-probabilities-in-numpy-scipy,0,"
+            I'm trying to do a bit of (I think) an obscure filter on an image using numpy/scipy. What I want is essentially a windowed probability distribution. I start with a grayscale image. For a given pixel ...
+        ,
+            , , , 
+        ,
+            ,
+        "
+0,How would you iterate this 2D linked list?,https://stackoverflow.com/questions/47109030/how-would-you-iterate-this-2d-linked-list,0,"
+            How would you iterate this 2D linked list?
+
+typedef struct _NODE 
+{
+char *pszName; 
+unsigned long ulIntVal;  
+char *pszString; 
+struct _NODE *pNext;  
+struct _NODE *pDown; 
+} NODE;
+I could do ...
+        ,
+            , 
+        ,
+            ,
+        "
+0,send data to firebase using arduino sketch,https://stackoverflow.com/questions/47109029/send-data-to-firebase-using-arduino-sketch,0,"
+            can anyone tell the syntax to send data from arduino to firebase.
+well i have sended data to firebase but i need to save multiple data under a single key.
+i have already tried and send data to ...
+        ,
+            , , 
+        ,
+            ,
+        "
+-1,How to read a JSON file in Angularjs 1.0?,https://stackoverflow.com/questions/47109028/how-to-read-a-json-file-in-angularjs-1-0,2,"
+            I need to read to a JSON format file in angular 1.6 so I do the following
+
+In Html
+
+    <div ng-model=""JsonRendering"" ng-controller=""NewsRendering"">
+        <div ng-repeat=""NewsData in News""&...
+        ,
+            , , , 
+        ,
+            ,
+        "
+0,Collapsing toolbar with recycle view with pictures,https://stackoverflow.com/questions/47109025/collapsing-toolbar-with-recycle-view-with-pictures,0,"
+            I am sorry if this question is duplicated.
+I am new to android programming, and I am building application for public transport, and i have done so far this: getting the directions form google, ...
+        ,
+            , , 
+        ,
+            ,
+        "
+0,Flask-Session Redis connecting to wrong host on AWS?,https://stackoverflow.com/questions/47109019/flask-session-redis-connecting-to-wrong-host-on-aws,0,"
+            from flask import Flask, session
+from flask_session import Session
+from redis import Redis
+
+app = Flask(__name__)
+
+SESSION_TYPE='redis'
+SESSION_REDIS = Redis(host='xxx.xxxxx.xxxx.xxxx.cache.amazonaws....
+        ,
+            , , , 
+        ,
+            ,
+        "
+0,Firebase Database Retrive data Issue,https://stackoverflow.com/questions/47109016/firebase-database-retrive-data-issue,0,"
+            I have put a button in my App. When I press the button +1 value saves to my database. So I want to check a method that when the button count =5 show an alert.It checks when i click the button. When my ...
+        ,
+            , , , 
+        ,
+            ,
+        "
+1,Kivy/python : How to run python script from another .py file and show in current window,https://stackoverflow.com/questions/47109012/kivy-python-how-to-run-python-script-from-another-py-file-and-show-in-current,0,"
+            menu.py
+
+from kivy.app import App
+from kivy.uix.dropdown import DropDown
+from kivy.lang import Builder
+class CustDrop(DropDown):
+    def __init__(self, **kwargs):
+        super(CustDrop, self)....
+        ,
+            , , , , 
+        ,
+            ,
+        "
+0,By clicking AddRoom i want to attach the same dialog which is i displayed previously. is there any chance to display nested dialog using fragments,https://stackoverflow.com/questions/47109010/by-clicking-addroom-i-want-to-attach-the-same-dialog-which-is-i-displayed-previo,0,"
+            By clicking Add Room i want to attach the same dialog which is i displayed previously. is there any chance to display nested dialog using fragments.
+
+AddRoom.setOnClickListener(new View....
+        ,
+            , , , 
+        ,
+            ,
+        "
+0,How to show unlimited Resources in game unity,https://stackoverflow.com/questions/47109009/how-to-show-unlimited-resources-in-game-unity,0,"
+            I have a different number of items and when i drag and drop any of these  items is remove but according to my test case there should UN Limited resource so if user pick one of them it copy remain ...
+        ,
+            , , , , 
+        ,
+            ,
+        "
+0,Upload files with Apache & PHP-FPM,https://stackoverflow.com/questions/47109007/upload-files-with-apache-php-fpm,0,"
+            I have installed a new Ubuntu 16.04 server and enabled PHP-FPM using this guide. I have also enabled the userdir module (so that I can have virtual sites running from a public_html folder under /home/$...
+        ,
+            , , , 
+        ,
+            ,
+        "
+0,hidden event not working on bootstrap modal,https://stackoverflow.com/questions/47109006/hidden-event-not-working-on-bootstrap-modal,0,"
+            I am trying to trigger an event on a bootstrap modal being hidden using the code below. The modal is created on the go fine and the on-function should find it but the hidden event is not triggered. ...
+        ,
+            , 
+        ,
+            ,
+        "
+0,Expanding text with button click using jquery,https://stackoverflow.com/questions/47109004/expanding-text-with-button-click-using-jquery,2,"
+            I have a div of particular height showing some text. I am trying to expand it using jquery.
+This is my button code
+
+ <button class=""btn btn-blog pull-right marginBottom10"" id=""expand"">More ...
+        ,
+            , , , , , 
+        ,
+            ,
+        "
+0,How to show waiting Gif image during form load event,https://stackoverflow.com/questions/47109003/how-to-show-waiting-gif-image-during-form-load-event,0,"
+            i have one form which is doing some long process on form load event,
+So i want to show One Gif image ""Please Wait"" during form load event.
+
+below is code.
+
+private void frmWaitShow()
+        {
+        ...
+        ,
+            , , , 
+        ,
+            ,
+        "
+0,send money to paytm mobile number,https://stackoverflow.com/questions/47108999/send-money-to-paytm-mobile-number,0,"
+            i m creating an application where user send money to another paytm registered mobile number and app only taking amount and user payment receiver mobile number And According to document we need ...
+        ,
+            , , 
+        ,
+            ,
+        "
+-3,How does `shadow dom` and `<shadow>` element internally work together?,https://stackoverflow.com/questions/47108998/how-does-shadow-dom-and-shadow-element-internally-work-together,0,"
+            I just came across in a <shadow> element in browser console did some research on the same and concluded that it is a part of shadow dom implementation, So how does shadow dom and <shadow> ...
+        ,
+            , , , 
+        ,
+            ,
+        "
+-4,Test Multiple Website,https://stackoverflow.com/questions/47108996/test-multiple-website,0,"
+            I need to Test multiple sites using Selenium WebDriver. I just need top test that if websites are accessible and getting open, then Print output ""Website is working!!"" and if website is down then ...
+        ,
+            , , , , 
+        ,
+            ,
+        "
+-6,Display the common value from multiple list of arrays in JavaScript,https://stackoverflow.com/questions/47108995/display-the-common-value-from-multiple-list-of-arrays-in-javascript,2,"
+            Want common value from multiple list of arrays in JavaScript.
+
+Example: My Input is: 
+
+[ [12, 6],[12, 11, 9, 8, 1],[12, 11, 9, 8, 6, 1],[12, 11, 9, 8, 6, 1],[12, 11, 9, 8, 6, 1] ]
+My expected Output ...
+        ,
+            , , 
+        ,
+            ,
+        "
+0,Facing Undefined index error in php on session variables,https://stackoverflow.com/questions/47108994/facing-undefined-index-error-in-php-on-session-variables,1,"
+            I am getting the error as 
+Notice: Undefined index: login in C:\xampp\htdocs\hindustane\includes\top-header.php on line 19
+ my top-header.php file is mentioned below:
+
+<div class=""top-banner-...
+        ,
+            , , 
+        ,
+            ,
+        "
+-2,Writing shell script for the below requirement [on hold],https://stackoverflow.com/questions/47108993/writing-shell-script-for-the-below-requirement,0,"
+            I need a shell script where i have directories parent directory(a1) sub directories (a2, a3) & parent directory(b1) sub directories( b2, b3) & parent directory(c1) sub directories( c2, c3) in ...
+        ,
+            , 
+        ,
+            ,
+        "
+0,How to do manual commit in SQLAlchemy?,https://stackoverflow.com/questions/47108992/how-to-do-manual-commit-in-sqlalchemy,0,"
+            I'm trying to run VACUUM via SQLAlchemy, and it does not work, because it's in transaction block.
+
+with engine.begin() as connection:
+    S = orm.session.sessionmaker()()
+    pd.io.sql.execute('DROP ...
+        ,
+            , , , , 
+        ,
+            ,
+        "
+0,Error in API 19 while pressing Option (Three Dot) Button on Action Bar in Android App,https://stackoverflow.com/questions/47108990/error-in-api-19-while-pressing-option-three-dot-button-on-action-bar-in-androi,0,"
+            11-04 13:59:41.120 12888-12888/com.brarapps.apps.nitnem W/dalvikvm: method Landroid/support/v7/widget/ListViewCompat;.lookForSelectablePosition incorrectly overrides package-private method with same ...
+        ,
+            , , 
+        ,
+            ,
+        "
+0,Java rmi server with multiple client - Only accept one client call at the time,https://stackoverflow.com/questions/47108987/java-rmi-server-with-multiple-client-only-accept-one-client-call-at-the-time,0,"
+            I'm developing a standard java RMI server with multiple clients. These clients have a menu where they can call the server to do various of things for them.
+
+One method involves a queue, where they can ...
+        ,
+            , , , 
+        ,
+            ,
+        "
+-1,Functions available to WebAssembly,https://stackoverflow.com/questions/47108986/functions-available-to-webassembly,1,"
+            Does anyone know of a list of functions which are available to call from WebAssembly when running in a modern web browser?
+
+Or perhaps the answer is that there are no such functions except the ones ...
+        ,
+            , 
+        ,
+            ,
+        "
+-1,T-SQL Inliner - make faster T-SQL codes,https://stackoverflow.com/questions/47108984/t-sql-inliner-make-faster-t-sql-codes,0,"
+            We have tone of T-SQL codes and need to make that faster, after many search and tests  we found the solution!
+inline codes are very faster than execute codes from another stored procedure or functions....
+        ,
+            , , , , , 
+        ,
+            ,
+        "
+-1,How to apply a function which gets the dataframe sliced with sliding window as a parameter in pandas?,https://stackoverflow.com/questions/47108981/how-to-apply-a-function-which-gets-the-dataframe-sliced-with-sliding-window-as-a,0,"
+            I've a time series data stored in pandas dataframe, which looks like this:
+
+    Date         Open    High    Low     Close   Volume
+0   2016-01-19   22.86   22.92   22.36   22.60   838024
+1   2016-01-...
+        ,
+            , , , , , 
+        ,
+            ,
+        "
+-1,"how to make user change color Primary ,color Primary Dark and color Accent?",https://stackoverflow.com/questions/47108980/how-to-make-user-change-color-primary-color-primary-dark-and-color-accent,0,"
+            I have 3 RadioGroup(for color Primary ,color Primary Dark and color Accent ) in my activity ,Every RadioGroup has 3 RadioButton (Red ,blue ,green ) , i want to make user can change color by him self.
+...
+        ,
+            , 
+        ,
+            ,
+        "
