@@ -8,6 +8,13 @@ class XicidailiSpider(scrapy.Spider):
     allowed_domains = ['www.xicidaili.com']
     start_urls = ['http://www.xicidaili.com/nn/1']
 
+    def __init__(self):  
+        self.headers = {  
+            'Content-Type':'application/x-www-form-urlencoded; charset=UTF-8',  
+            'Accept-Encoding':'gzip, deflate',  
+            'User-Agent':'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'  
+    } 
+
     def parse(self, response):
         ip_list = response.xpath('//*[@id="ip_list"]')
         trs = ip_list[0].xpath('tr')
