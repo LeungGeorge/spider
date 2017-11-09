@@ -60,7 +60,7 @@ class CollectipsSpiderMiddleware(object):
     def process_request(self, request, spider):
         thisip=random.choice(IP_POOL)
         print("this is ip:" + thisip["ipaddr"])
-        request.meta["proxy"]="http://"+thisip["ipaddr"]
+        #request.meta["proxy"]="http://"+thisip["ipaddr"]
         ua = random.choice(USER_AGENT_LIST)
         if ua:
             print("this is user agent:" + ua)

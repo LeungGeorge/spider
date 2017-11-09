@@ -7,16 +7,17 @@
 
 from scrapy import signals
 import random
-from collectips.settings import IP_POOL
-from collectips.settings import USER_AGENT_LIST
+from home.settings import IP_POOL
+from home.settings import USER_AGENT_LIST
 
-class CollectipsSpiderMiddleware(object):
+
+class HomeSpiderMiddleware(object):
     # Not all methods need to be defined. If a method is not defined,
     # scrapy acts as if the spider middleware does not modify the
     # passed objects.
 
-    def __init__(self,ip=''):  
-        self.ip=ip 
+    def __init__(self,ip=''):
+        self.ip=ip
 
     @classmethod
     def from_crawler(cls, crawler):

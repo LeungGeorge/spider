@@ -16,8 +16,6 @@ class XicidailiSpider(scrapy.Spider):
     } 
 
     def parse(self, response):
-        print 'aaaa'
-        exit()
         ip_list = response.xpath('//*[@id="ip_list"]')
         trs = ip_list[0].xpath('tr')
 

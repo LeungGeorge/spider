@@ -21,19 +21,3 @@ class CollectipsItem(scrapy.Item):
     alive_time       = scrapy.Field()
     check_time       = scrapy.Field()
 
-class CollectipsTouTiaoItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
-    ret_content               = scrapy.Field()
-    url                       = scrapy.Field()
-
-class CollectipsZhiHuItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
-    url                       = scrapy.Field()
-    reply_url                  = scrapy.Field()
-    title                     = scrapy.Field()
-    qid                       = scrapy.Field()
-    rid                       = scrapy.Field()
-    content                   = scrapy.Field()
-

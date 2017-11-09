@@ -13,7 +13,6 @@ BOT_NAME = 'collectips'
 
 SPIDER_MODULES = ['collectips.spiders']
 NEWSPIDER_MODULE = 'collectips.spiders'
-#HTTPERROR_ALLOWED_CODES = [200]
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
@@ -110,11 +109,6 @@ IP_POOL = [
 ]
 
 USER_AGENT_LIST = [
-    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.75 Safari/537.36",
-    "baidu：Mozilla/5.0 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html)",
-]
-
-USER_AGENT_LIST_BK = [
     "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/22.0.1207.1 Safari/537.1",
     "Mozilla/5.0 (X11; CrOS i686 2268.111.0) AppleWebKit/536.11 (KHTML, like Gecko) Chrome/20.0.1132.57 Safari/536.11", 
     "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.6 (KHTML, like Gecko) Chrome/20.0.1092.0 Safari/536.6", 

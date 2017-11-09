@@ -1,0 +1,13 @@
+setup.py
+collectips/__init__.py
+collectips/items.py
+collectips/middlewares.py
+collectips/pipelines.py
+collectips/settings.py
+collectips/spiders/__init__.py
+collectips/spiders/xicidaili.py
+project.egg-info/PKG-INFO
+project.egg-info/SOURCES.txt
+project.egg-info/dependency_links.txt
+project.egg-info/entry_points.txt
+project.egg-info/top_level.txt
