@@ -59,9 +59,9 @@ class HomeSpiderMiddleware(object):
             yield r
 
     def process_request(self, request, spider):
-        thisip=random.choice(IP_POOL)
-        print("this is ip:" + thisip["ipaddr"])
-        request.meta["proxy"]="http://"+thisip["ipaddr"]
+        thisip=self.get_ip_port()
+        print("this is ip:" + thisip)
+        request.meta["proxy"]="http://"+thisip
         ua = random.choice(USER_AGENT_LIST)
         if ua:
             print("this is user agent:" + ua)
@@ -70,3 +70,19 @@ class HomeSpiderMiddleware(object):
 
     def spider_opened(self, spider):
         spider.logger.info('Spider opened: %s' % spider.name)
+
+    def get_ip_port(self):
+        print 'random get ip port...'
+        ip_port_list = []
+        file = open("../collectips/ip_port_list.txt")
+
+        while True:
+            line = file.readline()
+            line = line.strip('\n')
+            if not line:
+                break;
+            ip_port_list.append(line)
+
+        thisip=random.choice(ip_port_list)
+        return thisip
+
