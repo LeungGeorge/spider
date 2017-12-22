@@ -18,7 +18,8 @@ class JokejiSpider(scrapy.Spider):
     sourceName = 'jokeji'
     baseDir = './crawl_data/jokeji/'
 
-    def __init__(self):
+    def __init__(self, **kwargs):
+        super(JokejiSpider, self).__init__(**kwargs)
         pageNum = 1
 
         ## 2393

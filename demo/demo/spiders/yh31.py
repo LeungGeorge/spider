@@ -18,13 +18,12 @@ class Yh31Spider(scrapy.Spider):
     baseDir = '/Users/liangyuanzheng/Documents/workspace/spider/demo/crawl_data' + '/' + name
 
     def __init__(self, **kwargs):
-        super(Yh31Spider, self).__init__(**kwargs)
         print '__init__'
         for pageNum in range(1, 152, 1):
             self.start_urls.append('http://qq.yh31.com/ka/zr/List_' + str(pageNum) + '.html')
 
         if not os.path.exists(self.baseDir):
-            os.mkdir(self.baseDir)
+            os.makedirs(self.baseDir)
 
     def parse(self, response):
         print response.url

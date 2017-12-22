@@ -17,13 +17,13 @@ class LaifudaoSpider(scrapy.Spider):
     start_urls = []
     baseDir = './crawl_data' + '/' + name
 
-    def __init__(self):
+    def __init__(self, **kwargs):
+        super(LaifudaoSpider, self).__init__(**kwargs)
         for pageNum in range(1, 691, 1):
             self.start_urls.append('http://www.laifudao.com/tupian/gaoxiaogif_' + str(pageNum) + '.htm')
 
         if not os.path.exists(self.baseDir):
             os.mkdir(self.baseDir)
-
 
     def parse(self, response):
         print response.url

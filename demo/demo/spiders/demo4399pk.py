@@ -7,7 +7,7 @@ import random
 import json
 import hashlib
 
-from crawlfunny.items import CrawlfunnyDemo4399PKItem
+from demo.items import CrawlfunnyDemo4399PKItem
 
 reload(sys)
 sys.setdefaultencoding("utf-8")
@@ -18,8 +18,8 @@ class Demo4399pkSpider(scrapy.Spider):
     allowed_domains = ['joke.4399pk.com']
     start_urls = []
 
+    # def __init__(self):
     def __init__(self, **kwargs):
-        super(Demo4399pkSpider, self).__init__(**kwargs)
         self.start_urls.append('http://joke.4399pk.com/funnyimg/find-cate-2.html')
 
     def parse(self, response):
@@ -43,4 +43,4 @@ class Demo4399pkSpider(scrapy.Spider):
                 item['source'] = self.name
                 item['img_original_url'] = saveUrl
 
-                yield  item
+                yield item

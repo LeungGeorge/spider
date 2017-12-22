@@ -18,7 +18,8 @@ class Zbjuran2Spider(scrapy.Spider):
     sourceName = 'zbjuran'
     baseDir = './crawl_data/zbjuran/'
 
-    def __init__(self):
+    def __init__(self, **kwargs):
+        super(Zbjuran2Spider, self).__init__(**kwargs)
         file = open("./crawl_data/laterCrawler.txt")
 
         while 1:
@@ -32,7 +33,7 @@ class Zbjuran2Spider(scrapy.Spider):
             self.start_urls.append(newLine)
 
 
-    def parse(self, response):
+    def parse(self, response, **kwargs):
         print response.url
         #/html/body/div[5]/div[1]/div[1]/div[2]/p/img
         img = response.xpath('/html/body/div[4]/div/div/div[2]/p/img')

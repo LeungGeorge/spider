@@ -17,7 +17,8 @@ class ZbjuranSpider(scrapy.Spider):
     sourceName = 'zbjuran'
     baseDir = './crawl_data/zbjuran/'
 
-    def __init__(self):
+    def __init__(self, **kwargs):
+        super(ZbjuranSpider, self).__init__(**kwargs)
         pageNum = 1
 
         ## 2393

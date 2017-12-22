@@ -17,7 +17,8 @@ class PengfuSpider(scrapy.Spider):
     sourceName = 'pengfu'
     baseDir = './crawl_data/pengfu/'
 
-    def __init__(self):
+    def __init__(self, **kwargs):
+        super(PengfuSpider, self).__init__(**kwargs)
         pageNum = 1
 
         ## 2393

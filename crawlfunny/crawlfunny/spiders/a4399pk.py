@@ -19,7 +19,8 @@ class A4399pkSpider(scrapy.Spider):
     start_urls = []
     baseDir = './crawl_data' + '/' + name
 
-    def __init__(self):
+    def __init__(self, **kwargs):
+        super(A4399pkSpider, self).__init__(**kwargs)
         for pageNum in range(1, 21, 1):
             url = 'http://joke.4399pk.com/funnyimg/find-cate-2-p-' + str(pageNum) + '.html'
             self.start_urls.append(url)
