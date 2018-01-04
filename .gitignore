@@ -3,3 +3,4 @@
 *.json.html
 crawl_data
 build
+.idea
