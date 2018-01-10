@@ -7,8 +7,7 @@
 
 from scrapy import signals
 import random
-from zhihu.settings import IP_POOL
-from zhihu.settings import USER_AGENT_LIST
+from zhihu.settings import *
 
 class ZhihuSpiderMiddleware(object):
     # Not all methods need to be defined. If a method is not defined,
@@ -53,16 +52,6 @@ class ZhihuSpiderMiddleware(object):
         # Must return only requests (not items).
         for r in start_requests:
             yield r
-
-    def process_request(self, request, spider):
-        thisip=random.choice(IP_POOL)
-        print("this is ip:" + thisip["ipaddr"])
-        #request.meta["proxy"]="http://"+thisip["ipaddr"]
-        ua = random.choice(USER_AGENT_LIST)
-        if ua:
-            print("this is user agent:" + ua)
-            request.headers.setdefault('User-Agent', ua)
-        pass
 
     def spider_opened(self, spider):
         spider.logger.info('Spider opened: %s' % spider.name)
